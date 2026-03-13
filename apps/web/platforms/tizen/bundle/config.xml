@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="com.homeenter.web" version="0.1.0" viewmodes="maximized">
+  <name>homeEnter</name>
+  <icon src="assets/icon.png" />
+  <content src="index.html" />
+  <feature name="http://tizen.org/feature/screen.size.all" />
+  <tizen:application id="4A6R9C8G9X.homeEnter" package="4A6R9C8G9X" required_version="6.5" />
+  <tizen:profile name="tv" />
+  <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="internal-only" hwkey-event="enable" />
+</widget>

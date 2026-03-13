@@ -1,0 +1,15 @@
+{
+  "id": "com.homeenter.web",
+  "title": "homeEnter",
+  "version": "0.1.0",
+  "vendor": "homeEnter",
+  "type": "web",
+  "main": "index.html",
+  "icon": "assets/icon.png",
+  "largeIcon": "assets/icon-large.png",
+  "requiredMemory": 64,
+  "resolution": "1920x1080",
+  "supportPortraitMode": false,
+  "transparent": false,
+  "disableBackHistoryAPI": true
+}

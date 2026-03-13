@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="360dp"
+  android:layout_height="wrap_content"
+  android:layout_marginEnd="18dp"
+  android:clickable="true"
+  android:focusable="true"
+  app:cardBackgroundColor="#12202E"
+  app:cardCornerRadius="18dp"
+  app:cardElevation="0dp"
+  app:strokeColor="#223447"
+  app:strokeWidth="1dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="204dp">
+
+      <ImageView
+        android:id="@+id/movieBackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33081018" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#AA081018"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+          android:id="@+id/movieTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#F5F2EA"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/movieMeta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4dp"
+          android:textColor="#D8CDBA"
+          android:textSize="14sp" />
+      </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+      <TextView
+        android:id="@+id/movieOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textColor="#B8C0C8"
+        android:textSize="15sp" />
+
+      <TextView
+        android:id="@+id/movieProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#223447"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp"
+        android:textColor="#F6B15F"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+      <ProgressBar
+        android:id="@+id/movieProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="12dp"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#F6B15F"
+        android:progressBackgroundTint="#263748" />
+    </LinearLayout>
+  </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

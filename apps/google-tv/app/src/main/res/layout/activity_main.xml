@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#081018"
+  android:orientation="vertical"
+  android:padding="24dp">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="#102032">
+
+    <ImageView
+      android:id="@+id/heroBackdrop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:contentDescription="@null"
+      android:scaleType="centerCrop" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#66081018" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:orientation="vertical"
+      android:padding="24dp">
+
+      <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#F6B15F"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/heroTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#F5F2EA"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/heroMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="#D8CDBA"
+        android:textSize="15sp" />
+
+      <TextView
+        android:id="@+id/heroOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:textColor="#E2E5E8"
+        android:textSize="16sp" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/heroPlayButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/play_now"
+          android:textAllCaps="false"
+          android:textColor="#081018"
+          app:backgroundTint="#F6B15F"
+          app:cornerRadius="14dp"
+          app:iconTint="#081018"
+          app:rippleColor="#33FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+          android:id="@+id/heroInfoButton"
+          style="@style/Widget.Material3.Button.OutlinedButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="12dp"
+          android:text="@string/more_info"
+          android:textAllCaps="false"
+          android:textColor="#F5F2EA"
+          app:cornerRadius="14dp"
+          app:rippleColor="#33FFFFFF"
+          app:strokeColor="#66F5F2EA" />
+      </LinearLayout>
+    </LinearLayout>
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/statusText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:text="@string/loading_home"
+    android:textColor="#F6B15F"
+    android:textSize="16sp" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/sectionList"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="20dp"
+    android:layout_weight="1"
+    android:clipToPadding="false"
+    android:paddingBottom="24dp" />
+
+</LinearLayout>

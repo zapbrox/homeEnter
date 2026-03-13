@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#000000">
+
+  <androidx.media3.ui.PlayerView
+    android:id="@+id/playerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:show_buffering="when_playing"
+    app:use_controller="true" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|start"
+    android:layout_margin="20dp"
+    android:background="#88081018"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+      android:id="@+id/playerTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#F5F2EA"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/playerStatus"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="4dp"
+      android:textColor="#F6B15F"
+      android:textSize="14sp" />
+  </LinearLayout>
+
+</FrameLayout>

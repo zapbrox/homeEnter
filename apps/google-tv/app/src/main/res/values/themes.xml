@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <style name="Theme.HomeEnterTv" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="android:windowBackground">#081018</item>
+    <item name="colorPrimary">#F6B15F</item>
+    <item name="colorPrimaryVariant">#D68734</item>
+    <item name="colorOnPrimary">#081018</item>
+    <item name="colorSecondary">#FFE39A</item>
+    <item name="android:statusBarColor" tools:targetApi="l">#081018</item>
+  </style>
+</resources>
